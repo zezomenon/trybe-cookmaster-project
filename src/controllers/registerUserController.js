@@ -9,9 +9,7 @@ const registerUserController = async (req, res, _next) => {
   } catch (error) {
     console.log(error);
     const { status, message } = error;
-    await res.status(status).json({
-      message,
-    });
+    await res.status(status).json({ message });
   }
 };
 
