@@ -4,6 +4,7 @@ const {
   registerUserRoute,
   loginRoute,
   recipesRoute,
+  getRecipesRoute,
  } = require('./src/routes');
 
 const app = express();
@@ -21,5 +22,6 @@ app.get('/', (request, response) => {
 app.use('/users', registerUserRoute);
 app.use('/login', loginRoute);
 app.use('/recipes', recipesRoute);
+app.use('/recipes', getRecipesRoute);
 
 app.listen(PORT, () => { console.log('API rodando na porta 3000'); });
