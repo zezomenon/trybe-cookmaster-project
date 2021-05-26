@@ -4,6 +4,7 @@ const recipesRoute = require('./recipesRoute');
 const getRecipesRoute = require('./getRecipesRoute');
 const getRecipeByIdRoute = require('./getRecipeByIdRoute');
 const updateRecipeRoute = require('./updateRecipeRoute');
+const deleteRecipeRoute = require('./deleteRecipeRoute');
 
 module.exports = {
   registerUserRoute,
@@ -12,4 +13,5 @@ module.exports = {
   getRecipesRoute,
   getRecipeByIdRoute,
   updateRecipeRoute,
+  deleteRecipeRoute,
 };

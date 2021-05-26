@@ -1,6 +1,6 @@
 const { StatusCodes } = require('http-status-codes');
 const { CustomError } = require('../helpers/error');
-const { updateRecipe } = require('../models/recipeModels');
+const { deleteRecipe } = require('../models/recipeModels');
 const { getUserIdByToken } = require('../middlewares/auth');
 
 const tokenValidate = (authorization) => {
@@ -12,11 +12,11 @@ const tokenValidate = (authorization) => {
   }
 };
 
-const updateRecipeService = async (authorization, id, body) => {
+const deleteRecipeService = async (authorization, id) => {
   tokenValidate(authorization);
-  const userId = getUserIdByToken(authorization);
-  const result = await updateRecipe(id, body, userId);
+  getUserIdByToken(authorization);
+  const result = await deleteRecipe(id);
   return result;
 };
 
-module.exports = updateRecipeService;
+module.exports = deleteRecipeService;
