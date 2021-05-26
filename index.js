@@ -3,6 +3,7 @@ const path = require('path');
 const { 
   registerUserRoute,
   loginRoute,
+  recipesRoute,
  } = require('./src/routes');
 
 const app = express();
@@ -19,5 +20,6 @@ app.get('/', (request, response) => {
 
 app.use('/users', registerUserRoute);
 app.use('/login', loginRoute);
+app.use('/recipes', recipesRoute);
 
 app.listen(PORT, () => { console.log('API rodando na porta 3000'); });
