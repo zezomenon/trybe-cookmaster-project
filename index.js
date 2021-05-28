@@ -8,6 +8,7 @@ const {
   getRecipeByIdRoute,
   updateRecipeRoute,
   deleteRecipeRoute,
+  updateRecipeImgRoute,
  } = require('./src/routes');
 
 const app = express();
@@ -29,5 +30,6 @@ app.use('/recipes', getRecipesRoute);
 app.use('/recipes', getRecipeByIdRoute);
 app.use('/recipes', updateRecipeRoute);
 app.use('/recipes', deleteRecipeRoute);
+app.use('/recipes', updateRecipeImgRoute);
 
 app.listen(PORT, () => { console.log('API rodando na porta 3000'); });

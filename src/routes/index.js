@@ -5,6 +5,7 @@ const getRecipesRoute = require('./getRecipesRoute');
 const getRecipeByIdRoute = require('./getRecipeByIdRoute');
 const updateRecipeRoute = require('./updateRecipeRoute');
 const deleteRecipeRoute = require('./deleteRecipeRoute');
+const updateRecipeImgRoute = require('./updateRecipeImgRoute');
 
 module.exports = {
   registerUserRoute,
@@ -14,4 +15,5 @@ module.exports = {
   getRecipeByIdRoute,
   updateRecipeRoute,
   deleteRecipeRoute,
+  updateRecipeImgRoute,
 };
