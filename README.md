@@ -23,6 +23,7 @@ Projeto desenvolvido durante o curso de Desenvolvimento Web Full Stack - Trybe, 
 Um app utilizando a arquitetura MSC (Models, Service e Controllers).
 
 Neste projeto:
+
 É possível fazer o cadastro e login de pessoa usuária, onde apenas esse usúario poderá acessar, modificar e deletar as receitas que cadastrou.
 
 É possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (ou `CRUD`, pros mais íntimos 😜).
